@@ -1,0 +1,32 @@
+Submitted Files: puzzle.cpp
+                 Observation.txt
+                 17 images 
+
+
+
+
+image_puzzle
+    
+   CONTENTS:
+     # puzzle.cpp    To compile use : g++ -std=c++11 puzzle.cpp -lfltk -lfltk_images -o puzzle
+                     To run : ./puzzle
+     # image.txt (containing names of image files)
+     # 16 images in .jpg format
+   
+   
+   WORKING:
+     # I have changed the format of the program as i have used Fl_Box instead of Fl_Buttons 
+         for parent of MyButton .
+     # Used Fl_JPEG_Image Class as well to store the images .
+     # Reason behind this being , it was becoming almost too difficult to place an image 
+         as a label to a Button, so i decided to flip the program accordingly .
+     # Have used fstream and strings to get the names of associated image file names into the program .
+     # And did rest things as same as N_puzzle and some commands associated with image labels to boxes .
+     
+   GAME :
+     # It consists of puzzle which contains 16 squares out of which one is black and remaining 15 are parts of the picture .
+     # Initially all the 16 parts were jumbled randomly(created using random function) .
+     # Only the  boxes around black box can be moved....remaining wont move .
+     # If we click on any neighbouring box to black box then the clicked box and black box exchange their respective positions .
+     # We should keep on going like this until we get the correct shape of the picture .
+     
